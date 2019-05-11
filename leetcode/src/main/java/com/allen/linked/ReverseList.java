@@ -12,15 +12,17 @@ public class ReverseList {
 
         ListNode head = new ListNode(1);
         head.append(2).append(3).append(4).append(5);
-        head.print("Input:");
+        head.print("Input");
 
-        ListNode reverseList = solution(head);
-        reverseList.print("Output:");
+         ListNode reverseList = solution(head);
+//        ListNode reverseList = recursiveSolution(head, null);
 
+        reverseList.print("Output");
     }
 
     /**
-     * 循环处理
+     * 循环
+     *
      * @param head
      * @return
      */
@@ -36,5 +38,22 @@ public class ReverseList {
         return preNode;
     }
 
+
+    /**
+     * 递归实现
+     *
+     * @param head
+     * @param newNode
+     * @return
+     */
+    public static ListNode recursiveSolution(ListNode head, ListNode newNode) {
+        if (head == null) {
+            return newNode;
+        }
+        ListNode next = head.next;
+        head.next = newNode;
+        return recursiveSolution(next, head);
+
+    }
 
 }

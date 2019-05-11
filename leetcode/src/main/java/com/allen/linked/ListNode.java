@@ -4,7 +4,6 @@ package com.allen.linked;
 import lombok.Data;
 import lombok.Getter;
 
-@Data
 @Getter
 public class ListNode {
 
