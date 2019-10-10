@@ -2,7 +2,7 @@ package com.allen.linked;
 
 /**
  * https://leetcode.com/problems/reverse-linked-list/
- * Definition for singly-linked list.
+ * Definition for singly-linked arr.
  * Input: 1->2->3->4->5->NULL
  * Output: 5->4->3->2->1->NULL
  */
