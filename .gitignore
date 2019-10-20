@@ -2,5 +2,6 @@
 .idea/
 *.iml
 /.idea/
-/demo/leetcode.iml
+/demo/demo.iml
 /demo/target/
+leetcode/
